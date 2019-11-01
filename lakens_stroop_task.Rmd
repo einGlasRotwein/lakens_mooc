@@ -1,14 +1,16 @@
 ---
 title: "Lakens Stroop Task"
 author: "Lakens"
-date: "20 juli 2018"
-output: html_document
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output: pdf_document
 ---
 
 ```{r global_options, echo = FALSE, warning = FALSE, message = FALSE, include = FALSE}
 library(ggplot2)
 library(reshape2)
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, include = TRUE)
+library(prmisc)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, include = TRUE,
+                      fig.align = "center")
 
 ## Original comments by Lakens start with one #. The ones I added start with two #.
 ```
